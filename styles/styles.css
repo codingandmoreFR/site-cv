@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(36, 38, 170);
+    background-image: 
+    radial-gradient(#2b56e4 1.5px, transparent 0),
+    radial-gradient(#2b56e4 1.5px, transparent 0),
+    radial-gradient(#2b56e4 1.5px, transparent 0),
+    radial-gradient(#2b56e4 1.5px, transparent 0);
+    background-size: 100px 100px;
+    background-position: 0 0, 0 50px, 50px 50px, 50px 0;
+    animation: infinite dots 2s linear;
+}
+
+@keyframes dots {
+    25%{
+        background-position: 0 50px, 50px 50px, 50px 0, 0 0;
+    }
+    50%{ 
+        background-position: 50px 50px, 50px 0, 0 0, 0 50px;
+    }
+    75%{
+        background-position: 50px 0, 0 0, 0 50px, 50px 50px;
+    }
+    100%{
+        background-position: 0 0, 0 50px, 50px 50px, 50px 0;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    text-align: center;
+}
+
+.ContentPage{
+    margin-left: 25%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-right: 25%;
+    border-color: black;
+    border-style: dashed;
+    padding: 15px;
+} 
+
+.link{
+    width: 16px;
+    height: 16px;
+}
+
+footer{
+    background-color: rgb(65, 65, 65);
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterContent{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(65, 65, 65);
+}
+
+.EmojiFooter{
+    width: 16px;
+    height: 16px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
